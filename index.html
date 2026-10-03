@@ -4,15 +4,116 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PTW Examination System</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7fa;
+      color: #1f2937;
+    }
+
+    .header {
+      background: #0b3d66;
+      color: white;
+      padding: 22px;
+      text-align: center;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 30px;
+    }
+
+    .header p {
+      margin-top: 8px;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card {
+      background: white;
+      padding: 35px;
+      border-radius: 14px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.10);
+    }
+
+    .card h2 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .exam-buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .exam-btn {
+      text-decoration: none;
+      background: #0b3d66;
+      color: white;
+      padding: 18px 28px;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      min-width: 220px;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .exam-btn:hover {
+      background: #14588f;
+    }
+
+    .footer {
+      margin-top: 35px;
+      font-size: 13px;
+      color: #777;
+    }
+  </style>
 </head>
+
 <body>
 
-  <h1>PTW Examination System</h1>
+  <div class="header">
+    <h1>PTW Examination System</h1>
+    <p>Online Examination for Permit Receivers and Permit Issuers</p>
+  </div>
 
-  <p>Online examination system for Permit Receivers and Permit Issuers.</p>
+  <div class="container">
+    <div class="card">
 
-  <button>Permit Receiver Exam</button>
-  <button>Permit Issuer Exam</button>
+      <h2>Select Examination Type</h2>
+      <p>Please select the examination you are authorized to take.</p>
+
+      <div class="exam-buttons">
+        <a class="exam-btn" href="#">
+          Permit Receiver Exam
+        </a>
+
+        <a class="exam-btn" href="#">
+          Permit Issuer Exam
+        </a>
+      </div>
+
+      <div class="footer">
+        Authorized examination access only
+      </div>
+
+    </div>
+  </div>
 
 </body>
 </html>
